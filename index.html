@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIT Lab Vote</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <script src="./public/scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar is-primary">
+        <p class="navbar-item"><strong>CIT Lab Task Voting Tool</strong></p>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-body  is-centered">
+        <p class="title">Planning Poker Voting Tool</p>
+        <p class="subtitle">
+          Need a planning tool for your project? Click <strong>Join</strong> to join the
+          voting session to plan your tasks.
+        </p>
+      </div>
+    </section>
+    <section class="section" id="main">
+      <div class="container">
+        <h1 class="title">Voting</h1>
+      </div>
+      <br />
+      <div class="columns is-centered">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>User Name</th>
+              <th>Join</th>
+            </tr>
+          </thead>
+          <tbody id="userlist"></tbody>
+        </table>
+      </div>
+      <div class="columns is-centered">
+        <div class="buttons">
+          <button class="button is-primary" id="start">Start voting</button>
+          <button class="button is-link" id="invite">Invite others...</button>
+        </div>
+      </div>
+    </section>
+    <section id="timer">
+      <div id="active-time"></div>
+    </section>
+    <section id="result">
+      <div class="columns is-centered">
+      <div id="average"></div>
+      </div>
+    </section>
+    <section class="section hidden" id="vote">
+      <div class="container">
+        <h1 class="title">Votes</h1>
+      </div>
+      <br />
+      <!-- <div class="is-centered" id="average"></div> -->
+      <div class="columns is-centered">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>User Name</th>
+              <th>Vote</th>
+            </tr>
+          </thead>
+          <tbody id="voterlist"></tbody>
+        </table>
+    </section>
+  </body>
+</html>
